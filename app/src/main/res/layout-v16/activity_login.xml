@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".ui.login.LoginActivity" android:background="#FFFFFF">
+
+    <include
+            layout="@layout/logo_layout"
+            android:id="@+id/include"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/credentialHolder"
+            app:layout_constraintEnd_toEndOf="@+id/credentialHolder"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+    />
+    <include
+            layout="@layout/credential_holders"
+            android:id="@+id/credentialHolder"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include" android:layout_marginTop="20dp"/>
+
+    <Button
+            android:id="@+id/login"
+            android:enabled="false"
+            android:layout_width="121dp"
+            android:layout_height="56dp"
+            android:layout_gravity="start"
+            android:text="@string/action_sign_in"
+            android:background="#3383CA"
+            android:textColor="#ffffff"
+            android:textSize="24sp" android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/credentialHolder"
+            app:layout_constraintStart_toStartOf="@+id/credentialHolder"
+            app:layout_constraintTop_toBottomOf="@+id/rememberMe" android:layout_marginTop="20dp"/>
+    <CheckBox
+            android:text="Remember me"
+            android:layout_width="143dp"
+            android:layout_height="31dp"
+            android:id="@+id/rememberMe"
+
+            android:checked="true"
+            app:layout_constraintEnd_toEndOf="@+id/credentialHolder"
+            app:layout_constraintTop_toBottomOf="@+id/credentialHolder"
+            android:layout_marginTop="10dp"/>
+    <ProgressBar
+            android:id="@+id/loading"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/credentialHolder"
+            app:layout_constraintStart_toStartOf="@+id/credentialHolder"
+            style="@style/Widget.AppCompat.ProgressBar" android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/login"
+            app:layout_constraintTop_toBottomOf="@+id/credentialHolder"/>
+    <TextView
+            android:text="@string/publicity"
+            android:layout_width="wrap_content"
+            android:layout_height="168dp"
+            android:id="@+id/textViewPub"
+            android:gravity="center_vertical|center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            android:textColor="#03A9F4" android:textSize="24sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="italic" app:layout_constraintEnd_toEndOf="@+id/credentialHolder"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

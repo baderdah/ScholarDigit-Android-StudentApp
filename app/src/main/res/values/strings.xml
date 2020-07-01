@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Certificate</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="publicity">With MyCertification app, request your certification right from home</string>
+    <string name="charging_reminder_notification_title">Hi, time to get your certification. Ready?</string>
+    <string name="charging_reminder_notification_body">Your request to some certification has been treated</string>
+    <string name="main_notification_channel_name">Primary</string>
+    <string name="submit">Submit</string>
+    <string name="scholar">Scholarity</string>
+    <string name="sucess">Success</string>
+    <string name="choose">Choose</string>
+    <string name="and">And</string>
+    <string name="infoDelai">According to statistics, your request will be treated within 3 days. We\'ll keep you posted once It\'s ready :)</string>
+    <string-array name="type_request">
+        <item>Choose a certification</item>
+        <item>Scholarity</item>
+        <item>Success</item>
+    </string-array>
+</resources>

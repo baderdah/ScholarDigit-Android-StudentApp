@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewSchool"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_school" />
+
+    <ImageView
+        android:id="@+id/imageViewSuccess"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSchool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSchool"
+        app:srcCompat="@drawable/ic_graduated" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="525dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSuccess"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSchool"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSchool">
+
+        <RadioButton
+            android:id="@+id/radioButtonScholarity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/scholar"
+            android:textColor="#03A9F4"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            android:checked="true"
+            android:gravity="start|fill"
+            android:text="@string/sucess"
+            android:textColor="#FF5722"
+            android:textSize="24sp"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#03A9F4"
+        android:text="@string/submit"
+        android:textColor="#FCF8F8"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSuccess"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSchool"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:text="@string/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSuccess"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSuccess"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSuccess"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSchool" android:textColor="#2196F3"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/infoDuration"
+        android:layout_width="549dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="@string/infoDelai"
+        android:textColor="#F8444040"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSuccess"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSchool"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

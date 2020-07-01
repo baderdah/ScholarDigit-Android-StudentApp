@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Refresh"
+          app:showAsAction="never"
+          android:id="@+id/refresh"/>
+    <item android:title="Log off"
+          app:showAsAction="ifRoom"
+          android:id="@+id/logoff"
+          android:icon="@mipmap/ic_logout"/>
+
+    <item android:id="@+id/contactUs"
+          app:showAsAction="ifRoom"
+          android:title="Contact us"
+          android:icon="@mipmap/ic_contact"/>
+
+
+
+</menu>

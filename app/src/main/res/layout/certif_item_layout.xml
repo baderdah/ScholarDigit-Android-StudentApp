@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="16dp"
+              android:orientation="vertical"
+             xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+            android:id="@+id/tv_item_number"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:fontFamily="monospace"
+            android:textSize="26sp"
+            tools:text="#42" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/readyButton"
+            android:visibility="invisible"
+            app:backgroundTint="#DD1D42"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"/>
+   <!-- <TextView
+            android:id="@+id/readyTextView"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/holo_red_light"
+            android:background="@drawable/priority_circle" />-->
+
+    <TextView
+            android:id="@+id/tv_view_holder_instance"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:fontFamily="monospace"
+            android:textColor="#000"
+            tools:text="ViewHolder instance: 7" />
+
+
+
+</LinearLayout>
